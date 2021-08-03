@@ -1,0 +1,12 @@
+name: Hello, World!
+on: push
+
+jobs:
+  build:
+    name: Greeting
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello, World!"
+      - run: cat /etc/issue
+      - run: uname -n
+      - run: id
